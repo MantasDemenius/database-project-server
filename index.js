@@ -40,11 +40,11 @@ conn.connect(function(err){
 });
 
 // Serve any static files built by React
-app.use(express.static(path.join(__dirname, "client/build")));
-
-app.get("/", function(req, res) {
-  res.sendFile(path.join(__dirname, "client/build", "index.html"));
-});
+// app.use(express.static(path.join(__dirname, "client/build")));
+//
+// app.get("/", function(req, res) {
+//   res.sendFile(path.join(__dirname, "client/build", "index.html"));
+// });
 
 require('./routes/CompaniesRoute')(app, conn);
 require('./routes/RestaurantsRoute')(app, conn);
