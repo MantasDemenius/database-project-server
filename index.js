@@ -9,13 +9,13 @@ app.use(cors());
 app.use(express.json());
 
 //Localhost
-const conn = mysql.createConnection({
-  host     : 'localhost',
-  user     : 'root',
-  password : '',
-  database : 'restoranas_v4',
-  dateStrings: 'date'
-});
+// const conn = mysql.createConnection({
+//   host     : 'localhost',
+//   user     : 'root',
+//   password : '',
+//   database : 'restoranas_v4',
+//   dateStrings: 'date'
+// });
 
 //var conn = mysql.createConnection(process.env.JAWSDB_URL);
 
@@ -28,12 +28,12 @@ const conn = mysql.createConnection({
 // });
 
 //KTU server
-// const conn = mysql.createConnection({
-//   host     : 'localhost',
-//   user     : 'mandem',
-//   password : 'ih1chooPhiemuw4e',
-//   database : 'mandem'
-// });
+const conn = mysql.createConnection({
+  host     : 'localhost',
+  user     : 'mandem',
+  password : 'ih1chooPhiemuw4e',
+  database : 'mandem'
+});
 
 conn.connect(function(err){
   (err)? console.log(err) : console.log("all good my man with connection");
