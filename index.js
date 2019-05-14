@@ -9,23 +9,23 @@ app.use(cors());
 app.use(express.json());
 
 //Localhost
-const conn = mysql.createConnection({
-  host     : 'localhost',
-  user     : 'root',
-  password : '',
-  database : 'restoranas_v4',
-  dateStrings: 'date'
-});
+// const conn = mysql.createConnection({
+//   host     : 'localhost',
+//   user     : 'root',
+//   password : '',
+//   database : 'restoranas_v4',
+//   dateStrings: 'date'
+// });
 
 // my CLEARDB_DATABASE_URL: mysql://b9e4b9609169bd:ef98abad05b8d68@us-cdbr-iron-east-02.cleardb.net/heroku_4a047a9c92e88c3?reconnect=true
 //Heroku CLEARDB
-// const conn = mysql.createConnection({
-//   host     : 'us-cdbr-iron-east-02.cleardb.net',
-//   user     : 'b9e4b9609169bd',
-//   password : 'ef98abad05b8d68',
-//   database : 'heroku_4a047a9c92e88c3',
-//   dateStrings: 'date'
-// });
+const conn = mysql.createConnection({
+  host     : 'us-cdbr-iron-east-02.cleardb.net',
+  user     : 'b9e4b9609169bd',
+  password : 'ef98abad05b8d68',
+  database : 'heroku_4a047a9c92e88c3',
+  dateStrings: 'date'
+});
 
 conn.connect(function(err){
   (err)? console.log(err) : console.log("all good my man with connection");
