@@ -17,24 +17,7 @@ app.use(express.json());
 //   dateStrings: 'date'
 // });
 
-//HEROKU
-// const conn = mysql.createConnection({
-//   host     : 'ou6zjjcqbi307lip.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
-//   user     : 'nbiiabwbnzlzrf4p',
-//   password : 'ljytjd8hp0oevo9p',
-//   database : 'k8yvzge5zm4v1wgf'
-// });
-
 // my CLEARDB_DATABASE_URL: mysql://b9e4b9609169bd:ef98abad05b8d68@us-cdbr-iron-east-02.cleardb.net/heroku_4a047a9c92e88c3?reconnect=true
-
-//KTU server
-// const conn = mysql.createConnection({
-//   host     : 'localhost',
-//   user     : 'mandem',
-//   password : 'ih1chooPhiemuw4e',
-//   database : 'mandem'
-// });
-
 //Heroku CLEARDB
 const conn = mysql.createConnection({
   host     : 'us-cdbr-iron-east-02.cleardb.net',
