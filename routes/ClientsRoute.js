@@ -7,8 +7,12 @@ module.exports = (app, conn) => {
 
   app.get('/database-project/Clients', (req, res) => {
     conn.query("SELECT * FROM klientas", (err, data) => {
-      if (err) throw err;
-      res.json({results: data});
+      if (err) {
+        res.status(500).json({ errors: {globalErr: err } });
+      }
+      else{
+        res.status(200).json({results: data});
+      }
     });
   });
 

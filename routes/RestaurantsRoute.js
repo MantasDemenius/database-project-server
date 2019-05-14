@@ -18,8 +18,12 @@ module.exports = (app, conn) => {
     restoranas.Vadovo_pastas \
     FROM restoranas LEFT JOIN imone ON restoranas.fk_IMONEid_IMONE = imone.id_IMONE";
     conn.query(sql, (err, data) => {
-      if (err) throw err;
-      res.status(200).json({results: data});
+      if (err) {
+        res.status(500).json({ errors: {globalErr: err } });
+      }
+      else{
+        res.status(200).json({results: data});
+      }
     });
   });
 
@@ -142,8 +146,12 @@ module.exports = (app, conn) => {
     FROM fk_teikia \
     ORDER BY fk_RESTORANASid_RESTORANAS ASC";
     conn.query(sql, (err, data) => {
-      if (err) throw err;
-      res.status(200).json({results: data});
+      if (err) {
+        res.status(500).json({ errors: {globalErr: err } });
+      }
+      else{
+        res.status(200).json({results: data});
+      }
     });
   });
 
