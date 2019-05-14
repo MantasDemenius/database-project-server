@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 18, 2019 at 09:25 AM
+-- Generation Time: May 14, 2019 at 10:12 AM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.2.12
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `restoranas_v3`
+-- Database: `restoranas_v4`
 --
 
 -- --------------------------------------------------------
@@ -43,22 +43,16 @@ CREATE TABLE `atsiliepimas` (
 
 INSERT INTO `atsiliepimas` (`id_ATSILIEPIMAS`, `fk_RESTORANASid_RESTORANAS`, `fk_KLIENTASid_KLIENTAS`, `Data`, `Komentaras`, `Ivertinimas`) VALUES
 (1, 12, 15, '2018-11-04', 'Morbi ut odio.', 5),
-(2, 1, 5, '2019-02-16', 'Nullam sit amet turpis elementum ligula vehicula consequat.', 1),
-(3, 2, 11, '2018-07-15', 'Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia.', 4),
-(4, 4, 7, '2018-10-11', 'Morbi non quam nec dui luctus rutrum. Nulla tellus.', 1),
 (5, 11, 10, '2019-02-11', 'Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis. Fusce posuere felis sed lacus.', 1),
 (6, 18, 19, '2019-01-23', 'Integer a nibh.', 4),
 (7, 9, 3, '2018-07-14', 'Etiam justo. Etiam pretium iaculis justo.', 4),
 (8, 19, 16, '2018-04-12', 'Aenean lectus.', 5),
 (9, 13, 15, '2018-12-01', 'Suspendisse accumsan tortor quis turpis. Sed ante. Vivamus tortor.', 5),
-(10, 3, 1, '2018-05-02', 'Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus. Pellentesque eget nunc.', 5),
-(11, 19, 19, '2018-06-16', 'In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem.', 5),
 (12, 13, 11, '2018-10-28', 'Donec vitae nisi.', 5),
 (13, 7, 16, '2018-03-19', 'Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla.', 3),
 (14, 10, 17, '2018-12-14', 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', 5),
 (15, 18, 3, '2018-09-24', 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', 1),
 (16, 6, 3, '2019-02-16', 'In hac habitasse platea dictumst. Etiam faucibus cursus urna.', 5),
-(17, 19, 6, '2018-06-21', 'Praesent blandit.', 1),
 (18, 11, 10, '2018-10-31', 'Maecenas pulvinar lobortis est. Phasellus sit amet erat.', 5),
 (19, 13, 4, '2019-03-02', 'Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet.', 1),
 (20, 12, 6, '2018-08-29', 'In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.', 2),
@@ -66,13 +60,10 @@ INSERT INTO `atsiliepimas` (`id_ATSILIEPIMAS`, `fk_RESTORANASid_RESTORANAS`, `fk
 (22, 8, 9, '2018-05-17', 'In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 4),
 (23, 17, 18, '2018-10-25', 'Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus.', 4),
 (24, 11, 5, '2018-11-02', 'Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum.', 5),
-(25, 20, 20, '2018-09-12', 'Suspendisse potenti. Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum.', 2),
-(26, 6, 6, '2018-07-04', 'Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci.', 3),
+(26, 14, 13, '2018-07-04', 'Morbi vel lectus indsfsdfsd quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit ', 3),
 (27, 16, 18, '2018-12-27', 'Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim.', 1),
 (28, 10, 9, '2018-05-07', 'Cras non velit nec nisi vulputate nonummy.', 4),
-(29, 4, 16, '2018-07-22', 'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit.', 2),
-(30, 6, 17, '2018-06-10', 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 1),
-(31, 5, 18, '2018-03-26', 'Nulla facilisi. Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit.', 4),
+(31, 9, 4, '2018-03-26', 'Nulla facilisi. Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at ', 3),
 (32, 16, 8, '2018-05-24', 'Nullam varius. Nulla facilisi.', 4),
 (33, 12, 3, '2018-10-19', 'Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.', 2),
 (34, 14, 19, '2019-02-01', 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue.', 3),
@@ -81,7 +72,39 @@ INSERT INTO `atsiliepimas` (`id_ATSILIEPIMAS`, `fk_RESTORANASid_RESTORANAS`, `fk
 (37, 16, 3, '2018-03-25', 'Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy.', 5),
 (38, 16, 2, '2018-06-09', 'Nunc nisl.', 4),
 (39, 17, 14, '2018-04-30', 'Pellentesque at nulla. Suspendisse potenti.', 1),
-(40, 10, 1, '2018-08-06', 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante.', 1);
+(46, 2, 11, '2019-05-01', 'labas', 5),
+(47, 1, 1, '2019-05-02', 'adsadas', 1),
+(48, 1, 1, '2019-05-02', 'dsadsad', 1),
+(49, 4, 1, '2019-05-02', 'asasadsa', 1),
+(50, 1, 1, '2019-05-02', 'dsadsa', 1),
+(51, 1, 1, '2019-05-02', 'dsadsa', 1),
+(52, 1, 1, '2019-05-02', 'dsadsa', 1),
+(53, 1, 1, '2019-05-02', 'cxzcxz', 1),
+(54, 1, 1, '2019-05-02', 'dsadsa', 1),
+(55, 1, 1, '2019-05-02', 'dsadas', 1),
+(56, 1, 1, '2019-05-02', 'dasdsa', 1),
+(57, 1, 1, '2019-05-02', 'gfgfdgd', 1),
+(58, 8, 3, '2019-05-02', 'gfgdgd', 1),
+(59, 2, 4, '2019-05-02', 'hi dude', 5),
+(60, 1, 1, '2019-05-02', 'teter', 1),
+(61, 1, 1, '2019-05-02', 'dssf', 1),
+(62, 1, 1, '2019-05-02', 'gfgd', 1),
+(63, 1, 6, '2019-05-02', 'fsdfsdf', 1),
+(64, 1, 1, '2019-05-02', 'fdsfs', 1),
+(65, 1, 1, '2019-05-02', 'dadsa', 1),
+(66, 1, 1, '2019-05-02', 'rwerw', 1),
+(67, 1, 1, '2019-05-02', 'fsdfd', 1),
+(68, 1, 1, '2019-05-02', 'dsada', 1),
+(69, 7, 8, '2019-05-02', 'labas testas', 3),
+(70, 1, 1, '2019-05-02', 'dasdsa', 1),
+(71, 1, 6, '2019-05-02', 'dsad', 1),
+(72, 1, 1, '2019-05-02', 'sdadsa', 1),
+(73, 7, 6, '2019-05-02', 'dsadsa', 1),
+(74, 1, 22, '2019-05-02', 'Labas testitins', 2),
+(75, 1, 1, '2019-05-02', 'cdsfsd', 1),
+(76, 1, 23, '2019-05-02', 'fsdfsd', 1),
+(77, 2, 24, '2019-05-02', 'Testintnias', 2),
+(78, 37, 25, '2019-05-03', 'Sitas restoranas lievas', 1);
 
 -- --------------------------------------------------------
 
@@ -143,26 +166,30 @@ CREATE TABLE `fk_teikia` (
 --
 
 INSERT INTO `fk_teikia` (`fk_RESTORANASid_RESTORANAS`, `fk_TIEKEJASid_TIEKEJAS`) VALUES
-(1, 1),
-(2, 2),
 (3, 3),
 (4, 4),
 (5, 5),
 (6, 6),
 (7, 7),
+(2, 8),
 (8, 8),
 (9, 9),
 (10, 10),
+(33, 10),
+(36, 10),
 (11, 11),
+(31, 11),
 (12, 12),
 (13, 13),
 (14, 14),
 (15, 15),
+(34, 15),
 (16, 16),
 (17, 17),
 (18, 18),
 (19, 19),
-(20, 20);
+(20, 20),
+(37, 21);
 
 -- --------------------------------------------------------
 
@@ -205,16 +232,16 @@ CREATE TABLE `imone` (
 --
 
 INSERT INTO `imone` (`id_IMONE`, `Pavadinimas`, `Adresas`, `Telefono_numeris`) VALUES
-(1, 'Graham Holdings Company', '729 Transport Place', '+596 265 783 4389'),
+(1, 'Graham Holdings Companyfdf', '729 Transport Place', '5464865486'),
 (2, 'Bank of South Carolina Corp.', '8955 Sugar Parkway', '+62 453 359 5446'),
-(3, 'Ultrapar Participacoes S.A.', '58 Rowland Place', '+351 341 211 3416'),
 (4, 'Juno Therapeutics, Inc.', '2577 Linden Junction', '+351 282 239 3841'),
 (5, 'First Solar, Inc.', '6 Melby Crossing', '+86 953 847 8141'),
 (6, 'Electronics for Imaging, Inc.', '516 Onsgard Circle', '+380 611 894 0011'),
 (7, 'Aerie Pharmaceuticals, Inc.', '62966 Sullivan Plaza', '+86 453 851 3674'),
 (8, 'Kimco Realty Corporation', '10824 Del Mar Hill', '+48 619 372 2879'),
 (9, 'Vanguard Mortgage-Backed Securities ETF', '5065 Florence Point', '+256 848 888 7302'),
-(10, 'Medley Capital Corporation', '1 John Wall Plaza', '+84 431 298 3455');
+(10, 'Medley Capital Corporation', '1 John Wall Plaza', '+84 431 298 3455'),
+(11, 'Deimantes kompanija', 'kreves', '755757');
 
 -- --------------------------------------------------------
 
@@ -257,9 +284,9 @@ CREATE TABLE `klientas` (
 --
 
 INSERT INTO `klientas` (`id_KLIENTAS`, `Vardas`, `Telefono_numeris`, `Adresas`, `Pastas`) VALUES
-(1, 'Wit Vasilov', '+63 942 330 1823', '5312 Almo Circle', 'wvasilov0@topsy.com'),
+(1, 'Wit Vasilovsda', '6464865468', '5312 Almo Circle', 'wvasilov0@topsy.com'),
 (2, 'Brew Cavalier', '+98 366 998 6251', '08 Bunting Circle', 'bcavalier1@icio.us'),
-(3, 'Judas Maggiore', '+63 379 730 6811', '0933 Eagan Point', 'jmaggiore2@ifeng.com'),
+(3, 'Judas Maggiore', '658456845', '0933 Eagan Point', 'jmaggiore2@ifeng.com'),
 (4, 'Zebadiah Anfonsi', '+48 504 759 1396', '853 Waubesa Circle', 'zanfonsi3@github.com'),
 (5, 'Idelle McMickan', '+62 398 922 2568', '15 Pankratz Plaza', 'imcmickan4@lycos.com'),
 (6, 'Ivie Mc Dermid', '+46 586 811 6799', '6 Claremont Trail', 'imc5@yale.edu'),
@@ -276,7 +303,11 @@ INSERT INTO `klientas` (`id_KLIENTAS`, `Vardas`, `Telefono_numeris`, `Adresas`, 
 (17, 'Gregorius Puddephatt', '+230 659 731 0057', '5277 Merchant Trail', 'gpuddephattg@feedburner.com'),
 (18, 'Pearce Lovart', '+86 215 282 5442', '53 Forest Run Circle', 'plovarth@geocities.com'),
 (19, 'Augustina Perrelle', '+86 987 619 6200', '513 Fairfield Trail', 'aperrellei@storify.com'),
-(20, 'Michail Bortoluzzi', '+373 260 244 9334', '86 Pierstorff Center', 'mbortoluzzij@cloudflare.com');
+(20, 'Michail Bortoluzzi', '+373 260 244 9334', '86 Pierstorff Center', 'mbortoluzzij@cloudflare.com'),
+(22, 'Jonas', '58648455', 'jurbarkas', 'jonas@gmail.com'),
+(23, 'Jonas', '654648486', '729 Transport Place', 'dsada@dsadas.lt'),
+(24, 'Mantas', '58648455', '729 Transport Place', 'jonas@gmail.com'),
+(25, 'Mantas', '5646845', 'dsdasdsad', 'dsadsa@dasdas.com');
 
 -- --------------------------------------------------------
 
@@ -377,10 +408,10 @@ CREATE TABLE `restoranas` (
 --
 
 INSERT INTO `restoranas` (`id_RESTORANAS`, `fk_IMONEid_IMONE`, `Pavadinimas`, `Adresas`, `Telefono_numeris`, `Vadovo_vardas`, `Vadovo_pavarde`, `Vadovo_telefono_numeris`, `Vadovo_pastas`) VALUES
-(1, 1, 'Jayo', '083 Spaight Circle', '+33 580 946 4093', 'Aprilette', 'Emlyn', '+63 697 609 6055', 'aemlyn0@pinterest.com'),
-(2, 9, 'Wikido', '1 Rusk Parkway', '+62 187 803 1638', 'Dorey', 'Spraging', '+62 421 856 0673', 'dspraging1@paginegialle.it'),
+(1, 7, 'Jayosad', '083 Spaight Circle', '564648645', 'Aprilette', 'Emlyn', '8456846548', 'aemlyn0@pintenbrest.com'),
+(2, 5, 'Wikido', '1 Rusk Parkway', '564865468', 'Dorey', 'Spraging', '654865486', 'dspraging1@paginegialle.it'),
 (3, 2, 'Divape', '0 Summit Hill', '+86 845 135 3679', 'Pooh', 'Palluschek', '+62 657 414 5550', 'ppalluschek2@nasa.gov'),
-(4, 6, 'Yodel', '1280 Haas Place', '+82 978 258 9656', 'Maddy', 'Carstairs', '+51 797 882 7037', 'mcarstairs3@microsoft.com'),
+(4, 6, 'Ma nigga', '1280 Haas Place', '564865468', 'Maddy', 'Carstairs', '8654684654', 'mcarstairs3@microsoft.com'),
 (5, 10, 'Kare', '9656 Tennyson Crossing', '+86 873 217 6099', 'Elmira', 'Dearell', '+62 343 583 2043', 'edearell4@twitter.com'),
 (6, 1, 'Meembee', '70517 Oriole Alley', '+86 598 510 5992', 'Bald', 'Blankhorn', '+64 131 975 6896', 'bblankhorn5@cornell.edu'),
 (7, 7, 'Mynte', '0 Eagan Circle', '+263 276 606 7269', 'Maurizia', 'Binden', '+63 946 692 6943', 'mbinden6@hostgator.com'),
@@ -396,7 +427,18 @@ INSERT INTO `restoranas` (`id_RESTORANAS`, `fk_IMONEid_IMONE`, `Pavadinimas`, `A
 (17, 7, 'Rhycero', '60 Pierstorff Terrace', '+216 606 219 2186', 'Sarita', 'Powrie', '+33 224 848 1752', 'spowrieg@gov.uk'),
 (18, 9, 'Skilith', '60 Weeping Birch Way', '+30 819 868 8948', 'Bellina', 'Morphew', '+86 500 100 5283', 'bmorphewh@google.cn'),
 (19, 8, 'Feednation', '654 Sutherland Court', '+62 105 894 2481', 'Mei', 'Mariolle', '+216 276 360 1931', 'mmariollei@friendfeed.com'),
-(20, 8, 'Meedoo', '88854 Portage Circle', '+86 345 333 0933', 'Doralia', 'Lippi', '+98 608 223 4115', 'dlippij@xrea.com');
+(20, 8, 'Meedoo', '88854 Portage Circle', '+86 345 333 0933', 'Doralia', 'Lippi', '+98 608 223 4115', 'dlippij@xrea.com'),
+(22, 2, 'Graham Holdings Company', '729 Transport Place', '58648455', 'Jonas', 'Kalbauskis', '4648645486', 'dsada@dsadsa.lt'),
+(27, 6, 'dsad', '729 Transport Place', '58648455', 'dsad', 'Emlyn', '4648645486', 'dsada@dsadsa.lt'),
+(28, 4, 'Graham Holdings Company', '729 Transport Place', '58648455', 'Jonas', 'Kalbauskis', '4648645486', 'dsada@dsadsa.lt'),
+(29, 5, 'dsad', 'dsadsa', '58648455', 'Jonas', 'Emlyn', '4648645486', 'dsada@dsadsa.lt'),
+(30, 5, 'Graham Holdings Company', '729 Transport Place', '58648455', 'Aprilettea', 'Kalbauskis', '4648645486', 'dsada@dsadsa.lt'),
+(31, 8, 'Graham Holdings Company', '729 Transport Place', '58648455', 'Aprilette', 'Emlyn', '4648645486', 'dsada@dsadsa.lt'),
+(32, 5, 'Graham Holdings Company', '729 Transport Place', '58648455', 'Jonas', 'Emlyn', '4648645486', 'dsada@dsadsa.lt'),
+(33, 9, 'Graham Holdings Company', '729 Transport Place', '58648455', 'Jonas', 'Emlyn', '4648645486', 'dsada@dsadsa.lt'),
+(34, 8, 'dsad', '729 Transport Place', '58648455', 'dsad', 'Kalbauskis', '4648645486', 'malonu@gmala.com'),
+(36, 7, 'Graham Holdings Company', '729 Transport Place', '58648455', 'Aprilettea', 'Emlyn', '4648645486', 'dsada@dsadsa.lt'),
+(37, 11, 'Pizza express', 'kreves', '544648668', 'Deimante', 'Kupraityte', '45545455', 'sadasd@dsadsa.com');
 
 -- --------------------------------------------------------
 
@@ -412,7 +454,7 @@ CREATE TABLE `tiekejas` (
   `Pastas` varchar(255) COLLATE utf8_lithuanian_ci NOT NULL,
   `Vadovo_vardas` varchar(255) COLLATE utf8_lithuanian_ci NOT NULL,
   `Vadovo_pavarde` varchar(255) COLLATE utf8_lithuanian_ci NOT NULL,
-  `Vadoro_telefono_numeris` varchar(255) COLLATE utf8_lithuanian_ci NOT NULL,
+  `Vadovo_telefono_numeris` varchar(255) COLLATE utf8_lithuanian_ci NOT NULL,
   `Vadovo_pastas` varchar(255) COLLATE utf8_lithuanian_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_lithuanian_ci;
 
@@ -420,8 +462,8 @@ CREATE TABLE `tiekejas` (
 -- Dumping data for table `tiekejas`
 --
 
-INSERT INTO `tiekejas` (`id_TIEKEJAS`, `Pavadinimas`, `Telefono_numeris`, `Adresas`, `Pastas`, `Vadovo_vardas`, `Vadovo_pavarde`, `Vadoro_telefono_numeris`, `Vadovo_pastas`) VALUES
-(1, 'Jazzy', '+358 279 794 8691', '48941 Jay Junction', 'kgotliffe0@wired.com', 'Keefe', 'Gotliffe', '+51 857 963 3396', 'kgotliffe0@mozilla.com'),
+INSERT INTO `tiekejas` (`id_TIEKEJAS`, `Pavadinimas`, `Telefono_numeris`, `Adresas`, `Pastas`, `Vadovo_vardas`, `Vadovo_pavarde`, `Vadovo_telefono_numeris`, `Vadovo_pastas`) VALUES
+(1, 'Jazzy', '84568465486', '48941 Jay Junction', 'kgotliffe0@wired.com', 'Keefe', 'Gotliffe', '456456865', 'kgotliffe0@mozilla.com'),
 (2, 'Wordify', '+976 418 733 7989', '9208 Vahlen Alley', 'bguyers1@globo.com', 'Brnaba', 'Guyers', '+86 924 306 3583', 'bguyers1@phoca.cz'),
 (3, 'Kimia', '+81 556 117 6756', '1 Jay Road', 'cticksall2@unicef.org', 'Catherin', 'Ticksall', '+55 378 489 7962', 'cticksall2@nsw.gov.au'),
 (4, 'Edgeblab', '+98 513 265 2158', '94 Northview Street', 'msoares3@delicious.com', 'Mercie', 'Soares', '+7 835 281 3676', 'msoares3@acquirethisname.com'),
@@ -440,7 +482,8 @@ INSERT INTO `tiekejas` (`id_TIEKEJAS`, `Pavadinimas`, `Telefono_numeris`, `Adres
 (17, 'Fivespan', '+62 738 554 9571', '86915 Fairview Circle', 'tmingerg@pen.io', 'Tuck', 'Minger', '+7 603 368 2685', 'tmingerg@deliciousdays.com'),
 (18, 'Livefish', '+1 602 675 3507', '86971 Oakridge Junction', 'tnoonh@bigcartel.com', 'Tomasine', 'Noon', '+351 190 880 9427', 'tnoonh@msu.edu'),
 (19, 'Agimba', '+27 142 732 4575', '73002 Stephen Court', 'cbalami@youtu.be', 'Charmain', 'Balam', '+234 756 108 8682', 'cbalami@4shared.com'),
-(20, 'Cogibox', '+86 523 786 9551', '388 Lukken Drive', 'kbrasenerj@noaa.gov', 'Kelcy', 'Brasener', '+86 651 234 1737', 'kbrasenerj@virginia.edu');
+(20, 'Cogibox', '+86 523 786 9551', '388 Lukken Drive', 'kbrasenerj@noaa.gov', 'Kelcy', 'Brasener', '+86 651 234 1737', 'kbrasenerj@virginia.edu'),
+(21, 'Mantas', '4648646545', 'dsadsad', 'dsdasd@dsadsa.com', 'dasdasdas', 'dsadsadas', '464864564', 'dsadas@sadsadas.lt');
 
 -- --------------------------------------------------------
 
@@ -618,7 +661,7 @@ ALTER TABLE `uzsakymas`
 -- AUTO_INCREMENT for table `atsiliepimas`
 --
 ALTER TABLE `atsiliepimas`
-  MODIFY `id_ATSILIEPIMAS` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `id_ATSILIEPIMAS` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=79;
 
 --
 -- AUTO_INCREMENT for table `darbuotojas`
@@ -636,7 +679,7 @@ ALTER TABLE `gerimas`
 -- AUTO_INCREMENT for table `imone`
 --
 ALTER TABLE `imone`
-  MODIFY `id_IMONE` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_IMONE` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `ivertinimas`
@@ -648,7 +691,7 @@ ALTER TABLE `ivertinimas`
 -- AUTO_INCREMENT for table `klientas`
 --
 ALTER TABLE `klientas`
-  MODIFY `id_KLIENTAS` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id_KLIENTAS` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `kurjeris`
@@ -672,13 +715,13 @@ ALTER TABLE `patiekalas`
 -- AUTO_INCREMENT for table `restoranas`
 --
 ALTER TABLE `restoranas`
-  MODIFY `id_RESTORANAS` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id_RESTORANAS` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
 -- AUTO_INCREMENT for table `tiekejas`
 --
 ALTER TABLE `tiekejas`
-  MODIFY `id_TIEKEJAS` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id_TIEKEJAS` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT for table `uzkanda`
