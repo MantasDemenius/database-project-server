@@ -5,7 +5,7 @@ module.exports = (app, conn) => {
   const messageSuccess = "Irasas sekmingai istrintas";
 
 
-  app.get('/Companies', (req, res) => {
+  app.get('/database-project/Companies', (req, res) => {
     conn.query("SELECT * FROM imone", (err, data) => {
       if (err) throw err;
       res.json({results: data});
