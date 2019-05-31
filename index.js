@@ -19,11 +19,20 @@ app.use(express.json());
 
 // my CLEARDB_DATABASE_URL: mysql://b9e4b9609169bd:ef98abad05b8d68@us-cdbr-iron-east-02.cleardb.net/heroku_4a047a9c92e88c3?reconnect=true
 //Heroku CLEARDB
+// var connectionString = {
+//   host     : 'us-cdbr-iron-east-02.cleardb.net',
+//   user     : 'b9e4b9609169bd',
+//   password : 'ef98abad05b8d68',
+//   database : 'heroku_4a047a9c92e88c3',
+//   dateStrings: 'date'
+// };
+
+//Heroku JawsDB
 var connectionString = {
-  host     : 'us-cdbr-iron-east-02.cleardb.net',
-  user     : 'b9e4b9609169bd',
-  password : 'ef98abad05b8d68',
-  database : 'heroku_4a047a9c92e88c3',
+  host     : 'tviw6wn55xwxejwj.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+  user     : 'bwkchw1gaqs00y4m',
+  password : 'zvo4orgamfm0brl3',
+  database : 'aomaoxwfsyijiq79',
   dateStrings: 'date'
 };
 
