@@ -77,7 +77,7 @@ require('./routes/ClientsRoute')(app, conn);
 require('./routes/CommentsRoute')(app, conn);
 
 // Handles any requests that don't match the ones above
-app.get('/*', (req,res) =>{
+app.get('/database-project/*', (req,res) =>{
     // res.sendFile(path.join(__dirname+'/client/build/index.html'));
     res.sendFile(path.join(__dirname, "index.html"));
 });
